@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import pytest
-from synth_addons import sentences_splitter
+from speech_addons.synth_addons import sentences_splitter
 
 
 class TestSplit:

@@ -37,7 +37,7 @@ well (if we ask Google to return it in `.mp3` format).
 ```
 import sys
 from google.cloud import texttospeech
-from synth_addons import synthesize_speech
+from speech.synth_addons import synthesize_speech
 
 # Instantiates a client
 client = texttospeech.TextToSpeechClient()
