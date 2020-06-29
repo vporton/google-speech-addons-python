@@ -2,7 +2,7 @@ import re
 from google.cloud import texttospeech
 
 
-def mysplit(text, chunk=5000):
+def sentences_splitter(text, chunk=5000):
     text = re.sub(r'(\s)+', r'\1', text)
 
     result = []
@@ -35,6 +35,6 @@ def mysplit(text, chunk=5000):
     return result
 
 
-def my_synthesize_speech(client, text, **kwargs):
-    chunks = mysplit(text)
+def synthesize_speech(client, text, **kwargs):
+    chunks = sentences_splitter(text)
     return b"".join(client.synthesize_speech(input=texttospeech.SynthesisInput(text=chunk), **kwargs).audio_content for chunk in chunks)
