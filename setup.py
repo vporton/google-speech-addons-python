@@ -3,7 +3,7 @@
 from setuptools import setup, find_packages
 setup(
     name="google-speech-addons",
-    version="1.0.0",
+    version="1.0.1",
     packages=['speech_addons'], #find_packages(),
     package_dir={"": "src"},
     test_suite="speech_addons.test",
@@ -16,7 +16,6 @@ setup(
     url="https://github.com/vporton/google-speech-addons-python",
     license="GPLv3",
     classifiers=[
-        "OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
         "Programming Language :: Python :: 3",
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
